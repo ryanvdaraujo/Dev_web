@@ -1,0 +1,61 @@
+hr.linhasuperior {
+    border: 3px solid rgb(114, 154, 160);
+}
+
+div.links{
+    display: block;
+    position: absolute;
+    left: 63%;
+}
+
+div.topo {
+    width: 900px;
+    margin: auto;   
+}
+
+div.topo > img {
+    margin: 10px 0px 10px 0px;
+}
+
+div.corpo {
+    background-color: rgb(230, 230, 230);
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+div.corpo > img {
+    display: block;
+    margin: auto;
+}
+
+main {
+    width: 900px;
+    margin: auto;
+}
+
+div.texto > h2 {
+    margin: 10px 0px;
+}
+
+div.texto > p {
+    margin: 15px 0px;
+}
+
+div.topo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer {
+    margin: 30px 0px 15px 0px;
+    text-align: center;
+    font-weight: bold;
+}
