@@ -1,0 +1,60 @@
+hr.linhasuperior {
+    border: 3px solid rgb(114, 154, 160);
+    margin: 0;
+}
+
+div.links{
+    display: block;
+    position: absolute;
+    left: 64%;
+}
+
+div.topo {
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: end;
+}
+
+div.topo > p {
+    text-align: right;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.topo > img {
+    margin: 10px 0px 10px 0px;
+}
+
+div.topo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main {
+    width: 900px;
+    margin: auto;
+}
+
+ol.lista {
+    list-style-type: decimal;
+}
+
+hr.linhacentral {
+    color: gray;
+}
+
+footer {
+    margin: 30px 0px 15px 0px;
+    text-align: center;
+    font-weight: bold;
+}
