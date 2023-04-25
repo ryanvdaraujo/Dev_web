@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    <title>Contato</title>
+    <link rel="stylesheet" href="../static/estilocontato.css">
+{% endblock %}
+
+{% block conteudo %}
+    <main>
+        <h1>Entre em contato</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias atque deleniti nam modi quibusdam, veritatis enim veniam obcaecati quam.</p>
+
+        <hr class="linhacentral">
+        <form action="/contato" method = 'post'>
+            <h4>Seu e-mail:</h4>
+            <input type="email" name="email" id="email">
+
+            <h4>Assunto:</h4>
+            <input type="text" name="assunto" id="assunto">
+
+            <h4>Descrição:</h4>
+            <input type="text" name="descricao" id="descricao">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+{% endblock %}
+
+
