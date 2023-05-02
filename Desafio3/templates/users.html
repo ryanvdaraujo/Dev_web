@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+<title>Users</title>
+<link rel="stylesheet" href="../static/estilocontato.css">
+{% endblock %}
+
+{% block conteudo %}
+<main>
+    <ol>
+        {% for users in usersInfo %}
+            <li>Email: {{ users[0] }}</li>
+            <li>Assunto: {{ users[1] }}</li>
+            <li>Descrição: {{ users[2] }}</li>
+        {% endfor %}
+    </ol>
+</main>
+{% endblock %}

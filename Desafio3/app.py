@@ -31,7 +31,7 @@ def contato():
         descricao = request.form['descricao']
 
         cur = mysql.connection.cursor()
-        cur.execute(f'INSERT INTO contatos(email, assunto, decricao) VALUES ("{email}", "{assunto}", "{descricao}")')
+        cur.execute(f'INSERT INTO contatos(email, assunto, descricao) VALUES ("{email}", "{assunto}", "{descricao}")')
 
         mysql.connection.commit()
 
@@ -44,3 +44,11 @@ def contato():
 @app.route("/quemsomos")
 def quemsomos():
     return render_template("Quemsomos.html")
+
+@app.route("/users")
+def users():
+    cur = mysql.connection.cursor()
+    users = cur.execute('SELECT * FROM contatos')
+    if users > 0:
+        usersInfo = cur.fetchall()
+        return render_template("users.html", usersInfo=usersInfo)
